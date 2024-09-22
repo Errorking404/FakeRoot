@@ -16,7 +16,7 @@ echo " |______|_|  |_|  \___/|_|   "
 echo -e "${NC}"
 
 while true; do
-  # Banner with loading animation
+  
   echo -e "${GREEN}"
   for ((i=0; i<=10; i++)); do
     echo -ne "\rLoading [$i/10]..."
@@ -39,7 +39,7 @@ while true; do
 
   echo -e "Choose a distro for fakeroot::"
 
-  # List of available distros
+
   distros=("Ubuntu" "Debian" "Fedora" "CentOS" "Alpine")
 
   # Display menu in a table format
@@ -56,10 +56,10 @@ while true; do
 
   sleep 2s
 
-  # Ask user to select a distro
+  
   while true; do
     read -p "Enter the number of your chosen distro: " choice
-    # Validate user input
+    
     if [[ $choice =~ ^[0-9]+$ ]] && (( choice >= 1 && choice <= ${#distros[@]} )); then
       selected_distro=${distros[$((choice-1))]}
       break
@@ -72,13 +72,11 @@ while true; do
   done
 
   if [[ $choice != 6 ]]; then
-    # Convert selected distro name to lowercase
+
     selected_distro_lower=$(echo "$selected_distro" | tr '[:upper:]' '[:lower:]')
 
-    # Download and install the selected distro
     proot-distro install $selected_distro_lower
 
-    # Create a separate file to login the user
     login_file="Start_${selected_distro}.sh"
     echo "#!/bin/bash" > $login_file
     echo "proot-distro login $selected_distro_lower" >> $login_file

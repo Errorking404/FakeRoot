@@ -1,4 +1,5 @@
-**FakeRoot Script**
+**FakeRoot Script:**
+
 Get sudo permission without root😜
 **Description:**
 

@@ -19,7 +19,8 @@ This script allows you to install and manage multiple Linux distributions on you
 4. Run the script by typing `./FakeRoot.sh`
 5. Follow the prompts to select and install a distribution
 6. Once installed, login to the distribution by running the generated login script (e.g. `./Start_Ubuntu.sh`)
-
+7. To get root access type this command `apt install tsu -y`
+   
 **Note:**
 
 This script is for educational and testing purposes only. Use at your own risk.

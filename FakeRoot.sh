@@ -31,7 +31,7 @@ while true; do
   apt update && apt upgrade -y
   apt install git proot -y
   apt install proot-distro -y
-
+  apt install bash -y
   echo -e "Installation Completed."
 
   sleep 4s

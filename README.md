@@ -28,7 +28,8 @@ This script allows you to install and manage multiple Linux distributions on you
    ```
    
 7. Run the script by typing.
-8. ``` ./FakeRoot.sh
+8. ```
+   ./FakeRoot.sh
    ```
 9. Follow the prompts to select and install a distribution
 10. Once installed, login to the distribution by running the generated login script (e.g. `./Start_Ubuntu.sh`)

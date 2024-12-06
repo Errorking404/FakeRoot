@@ -15,12 +15,24 @@ This script allows you to install and manage multiple Linux distributions on you
 **Usage:**
 
 1. Open Termux on your Android device
-2. Download the script using `git clone` or by downloading the raw file
-3. Make the script executable by running `chmod +x FakeRoot.sh`
-4. Run the script by typing `./FakeRoot.sh`
-5. Follow the prompts to select and install a distribution
-6. Once installed, login to the distribution by running the generated login script (e.g. `./Start_Ubuntu.sh`)
-7. To get root access type this command `apt install tsu -y`
+2. copy and paste the following command:
+3. ```
+   git clone https://github.com/Errorking404/FakeRoot.git
+   ```
+4. ```
+   cd FakeRoot
+   ```
+5. Make the script executable by running
+6. ```
+   chmod +x *
+   ```
+   
+7. Run the script by typing.
+8. ``` ./FakeRoot.sh
+   ```
+9. Follow the prompts to select and install a distribution
+10. Once installed, login to the distribution by running the generated login script (e.g. `./Start_Ubuntu.sh`)
+11. To get root access type this command `apt install tsu -y`
    
 **Note:**
 

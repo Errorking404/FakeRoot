@@ -1,6 +1,8 @@
 **FakeRoot Script:**
 
 Get sudo permission without root😜
+
+
 **Description:**
 
 This script allows you to install and manage multiple Linux distributions on your Android device using Termux. It provides a simple and user-friendly interface to select and install a distribution, and then login to it.
@@ -17,6 +19,8 @@ This script allows you to install and manage multiple Linux distributions on you
 1. Open Termux on your Android device
 2. copy and paste the following command:
 3. ```
+   apt upgdate && apt upgrade -y
+   apt install git -y
    git clone https://github.com/Errorking404/FakeRoot.git
    ```
 4. ```
@@ -29,10 +33,10 @@ This script allows you to install and manage multiple Linux distributions on you
    
 7. Run the script by typing.
 8. ```
-   ./FakeRoot.sh
+   ./FakeRoot
    ```
 9. Follow the prompts to select and install a distribution
-10. Once installed, login to the distribution by running the generated login script (e.g. `./Start_Ubuntu.sh`)
+10. Once installed, login to the distribution by running the generated login script (e.g. `./Start.sh`)
 11. To get root access type this command `apt install tsu -y`
    
 **Note:**
